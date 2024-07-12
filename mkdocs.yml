@@ -1,0 +1,32 @@
+site_name: MarkDown
+theme: 
+    name: material
+    palette: 
+      - scheme: default
+        primary: purple
+        toggle: 
+          icon: material/weather-night
+          name: Modo Noturno
+      - scheme: slate
+        primary: deep purple
+        toggle: 
+          icon: material/weather-sunny
+          name: Modo Claro
+nav:
+    - Home: index.md
+    - Dois: pagina_2.md
+
+markdown_extensions:
+ - pymdownx.tasklist # Lista de tarefas
+ - pymdownx.emoji # Emojis
+ - pymdownx.tilde # Tachado
+ - pymdownx.mark # Marcação
+ - pymdownx.highlight # highlight códigos
+ - pymdownx.superfences # Para MKdocs-material theme
+ - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
